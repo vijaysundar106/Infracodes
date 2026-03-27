@@ -5,17 +5,11 @@ provider "aws" {
 }
 
 module "test_vpc" {
-  source         = "C:/Users/DLP-I516-197/Desktop/Infratasknew/modules"
+  source         = "https://github.com/vijaysundar106/VPC-Modules.git"
   vpc_cidr       = var.vpc_cidr
   vpc_name       = var.vpc_name
   pubsubnet_cidr = var.subnet_cidr
 }
 
-module "test_vpc1" {
-  source         = "C:/Users/DLP-I516-197/Desktop/Infratasknew/modules"
-  vpc_cidr       = var.vpc_cidr
-  vpc_name       = var.vpc_name
-  pubsubnet_cidr = var.subnet_cidr
-}
 
 
